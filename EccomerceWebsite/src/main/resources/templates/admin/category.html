@@ -13,19 +13,10 @@
 					<div class="card card-sh">
 						<div class="card-header text-center ">
 							<p class="fs-4">Add Category</p>
-							<th:block th:if="${session.succMsg}">
-								<p class="text-success fw-bold">[[${session.succMsg}]]</p>
-								<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
-							</th:block>
-
-							<th:block th:if="${session.errorMsg}">
-								<p class="text-danger fw-bold">[[${session.errorMsg}]]</p>
-								<th:block th:text="${@commnServiceImpl.removeSessionMessage()}"></th:block>
-							</th:block>
 
 						</div>
 						<div class="card-body">
-							<form action="/admin/saveCategory" method="post"
+							<form action="#" method="#"
 								enctype="multipart/form-data">
 								<div class="mb-3">
 									<label>Enter Category</label> <input type="text" name="name"

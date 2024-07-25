@@ -30,9 +30,9 @@ public class AdminController {
     }
 
     
-    @GetMapping("/loadView_product")
-    public String loadView_product(){
-        return "admin/view_product";
+    @GetMapping("/loadView_products")
+    public String loadView_products(){
+        return "admin/view_products";
     }
 
     
